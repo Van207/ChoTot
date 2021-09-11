@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+body{
+    background-image: url(./img/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffba00;
+    padding: 6px 0 12px 0;
+}
+.header_logo-img {
+    width: 60%;
+}
+
+.header_container {
+    width: 960px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+.header_option-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_option_right {
+    display: flex;
+}
+
+.header_item-wrapper {
+    display: flex;
+    margin: 0 24px;
+    cursor: pointer;
+}
+.header_item-desc {
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.header_option-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_input-wraper {
+    position: relative;
+}
+
+.header_input-search {
+    border: none;
+    border-radius:3px;
+    height: 24px;
+    width: 580px;
+    padding: 6px 12px;
+    outline: none;
+}
+
+.header_option-right-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_icon {
+    position: absolute;
+    right: 4px;
+    top: 0px;
+    font-size: 18px;
+    padding: 10px 12px;
+    color: #fe9900;
+}
+
+.header_user, .header_write {
+    margin: 0 16px;
+    cursor: pointer;
+}
+
+.header_user-name {
+    font-size: 16x;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+.header_write {
+    display: block;
+    padding: 12px;
+    background-color: #fc9807;
+    border-radius: 5px;
+    
+}
+
+.header_write:hover{
+    background-color: #da8403;
+    cursor: pointer;
+}
+
+.header_write-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+/* Container */
+.container {
+    width: 960px;
+    max-width: 100%;
+    margin: 100px auto;
+    margin-bottom: 12px;
+}
+
+.slider {
+    width: 960px;
+    background-color: #fff;
+    padding: 10px;
+}
+.silder_img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.silder_img{
+    width: 100%;
+    text-align: center;
+    border-radius:3px;
+}
+
+.silder_option {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 24px 4px 24px;
+}
+
+.icon {
+    padding: 12px;
+    border-radius: 50%;
+    background-color: #589f3a;
+}
+.icon_file {
+    padding: 12px 14px;
+}
+
+.icon_gif {
+    background-color: #0092a3;
+}
+.icon_dollar {
+    background-color: #ff7b01;
+    padding: 12px 14px;
+}
+
+.list_option {
+    margin: 12px 0;
+    width: 960px;
+    background-color: #fff;
+    padding: 10px;
+}
+.list_header {
+    margin-bottom: 12px;
+}
+.product_header-text,
+.list_header-text {
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.list_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1;
+    padding-left: 20px;
+}
+
+.list_item-wrap {
+    display: flex;
+    flex-flow: column;
+    min-width: 14%;
+    flex: 7;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.list_item-wrap:hover {
+    position: relative;
+}
+
+.list_item-img {
+    width: 70%;
+    margin-bottom: 8px;
+}
+
+.list_item-desc {
+    display: block;
+    max-width: 95px;
+    text-align: center;
+}
+
+.product {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.product_header {
+    padding: 12px 0 12px 4px;
+}
+
+.product_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.product_item-wrap {
+    display: flex;
+    flex-flow: column;
+    flex: 5;
+    width: 20%;
+    border: 1px solid #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+}
+
+.product_item-wrap:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 30%);
+}
+
+.product_item-img-wrapper {
+    position: relative;
+}
+
+.product_item-img {
+    width: 166px;
+    height: 166px;
+    border: 1px solid #d9d9d9;
+}
+
+.icon_heart {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    color: #d00230;
+    font-size: 18px;
+}
+
+.product_item-name {
+    display: inline-block;
+    max-width: 166px;
+    min-height: 33px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.product_item-price {
+    display: inline-block;
+    font-size: 16px;
+    color: #d00230;
+    font-weight: 700;
+    margin: 6px 0;
+    text-align: left;
+}
+.product_item-desc {
+    font-size: 12px;
+    color: #adadad;
+    margin: 4px 0;
+}
+
+
+.suggest {
+    margin-top:12px;
+    width: 960px;
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+
+.suggest_header {
+    color: #777;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.suggest_list-wrap {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.suggest_list {
+    padding: 0 15px;
+    font-size: 12px;
+    color: #777;
+}
+
+.suggest_item {
+    margin: 10px 0;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+}
+
+.footer_wrap {
+    width: 960px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+}
+
+.footer_download {
+    width: 35%;
+
+}
+
+.footer_text {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.footer_download-wrap {
+    display: flex;
+    
+}
+
+.footer_download-qr {
+    width: 87px;
+    height: 87px;
+}
+
+.footer_download-link {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.footer_download-appstore, .footer_download-chplay, .footer_download-huawei {
+    width: 45%;
+    margin-bottom: 14px;
+    margin-left: 12px;
+}
+
+.footer_about {
+    width: 25%;
+}
+
+.footer_help {
+    width: 25%;
+}
+
+.help_list, .about_list {
+    color: #4a4a4a;
+    font-size: 14px;
+    list-style: none;
+}
+
+.help_item, .about_item{
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.footer_linked {
+    width: 20%;
+}
+
+.social_img {
+    margin-right: 20px;
+}
+
+.footer_info {
+    border-top: 1px solid #f4f4f4;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer_info-text {
+    margin-top: 30px;
+    
+}
+
+.footer_info-text p {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-bottom: 4px;
+}
